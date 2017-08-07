@@ -1,5 +1,8 @@
+# File used to generate Movie Website
 import movie
 import fresh_tomatoes
+
+# Instantiating variables of the class Movie
 
 toy_story = movie.Movie("Toy Story", 
 	"A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
@@ -36,6 +39,8 @@ star_wars_6 = movie.Movie("Star Wars: Episode VI - Return of the Jedi",
 	"https://www.youtube.com/watch?v=5UfA_aKBGMc"
 	)
 
+# Adding each movie into the list
 movie_list = [toy_story, toy_story_2, toy_story_3, star_wars_4, star_wars_5, star_wars_6]
 
+# Using the prepared code to render the generated website
 fresh_tomatoes.open_movies_page(movie_list)
